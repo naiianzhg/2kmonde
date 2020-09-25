@@ -1,0 +1,9 @@
+@if(\Illuminate\Support\Facades\Session::has('success'))
+    <div class="alert alert-success">
+        <button type="button" class="close" data-dismiss="alert">x</button>
+        <strong>
+            <i class="fa fa-check-circle fa-lg fa-fw"></i> Success.
+        </strong>
+        {{ \Illuminate\Support\Facades\Session::get('success') }}
+    </div>
+@endif
